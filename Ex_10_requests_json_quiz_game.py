@@ -14,7 +14,6 @@ import html
 score = 0; # points gained at each round
 play = "" # placeholder for holding user's decision to play again or not
 question_counter = 0 # question counter
-valid_answer = False # flag for answer validation
 
 
 while play != "quit":
@@ -47,6 +46,8 @@ while play != "quit":
         answer_num += 1
         
     print( "\n" )
+    
+    valid_answer = False # flag for answer validation
     while valid_answer == False:
         user_answer = input( "Please type the number associated with your answer: " )  # prompt
         try:
